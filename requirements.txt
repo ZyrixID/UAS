@@ -3,3 +3,4 @@ google-generativeai
 pulp
 matplotlib
 numpy
+Pillow
