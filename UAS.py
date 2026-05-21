@@ -128,7 +128,7 @@ def extract_linear_program(soal_cerita, api_key, gambar=None):
     response = model.generate_content(paket_pesan)
     clean_text = re.sub(r'```json\n?', '', response.text)
     clean_text = re.sub(r'```\n?', '', clean_text)
-    return json.loads(clean_text.strip())
+    return json.loads(clean_text.strip(), strict=False)
 
 
 # ==========================================
